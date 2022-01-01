@@ -1,0 +1,819 @@
+/* Colors
+   ========================================================================== */
+   
+.white {
+    background-color: #FFFFFF;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.green {
+    background-color: #00FF00;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.black-text {
+    color: #000000;
+}
+
+.green-text {
+    color: #00FF00 !important; /* collision with materialize css */
+}
+
+.grey-text {
+    color: grey;
+}
+
+/* Overwrite the materialize labels */
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #00FF00;
+}
+
+/* Overwrite the materialize underline */
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #00FF00;
+  -webkit-box-shadow: 0 1px 0 0 #00FF00;
+          box-shadow: 0 1px 0 0 #00FF00;
+}
+
+/* Fonts
+   ========================================================================== */
+
+/* Used for the logo */
+.anonymous {
+    font-family: 'Anonymous Pro', monospace;
+}
+
+/* Used for the h1 */
+.dosis {
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Used for the headers */
+.fira {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Used for the paragraphs */
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Dimensions
+   ========================================================================== */
+
+/* Margins */ 
+
+.navbar-margin-top {
+    margin-top: 6px;
+}
+
+.logo-image-margin {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.logo-text-margin {
+    margin-top: 6px;
+    margin-left: 16px;
+}
+
+/* Define the margins of every section */
+.section-wrapper {
+    margin-top: 8ch;
+    margin-bottom: 8ch;
+}
+
+/* A space between a header and a h1 */
+.big-text.margin-top {
+    margin-top: 5ch;
+}
+
+/* white space for the h2-h6 headers */
+.header-margin {
+    padding-bottom: 3ch;
+}
+
+.menu-button-margin {
+    margin: 6px;
+}
+
+.margin16 {
+    margin: 16px;
+}
+
+.margin16-top {
+    margin-top: 16px;
+}
+
+.padding16 {
+    padding: 16px;
+}
+
+/* Paddings */
+
+.big-padding {
+    padding: 72px;
+}
+
+@media screen and (max-width:600px) {
+    .big-padding {
+        padding: 16px;
+    }
+}
+
+.image-grid-margin {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* Attributes */
+
+.justify {
+    text-align: justify;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.ver-align {
+    vertical-align:middle;
+}
+
+.right {
+    float: right;
+}
+
+@media screen and (max-width:600px) {
+     .center-mobile {
+         text-align: center;
+     }   
+}
+
+
+.full-width-image {
+    max-width: 100%;
+}
+
+.rounded-corners {
+    border-radius: 10px;
+}
+
+/* Wraps a text block for better apperance */
+.column-text {
+    max-width: 75%;
+}
+
+@media screen and (max-width:1400px) {
+    .column-text {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .column-text {
+        max-width: 100%;
+    }
+}
+
+/* Texts */
+
+/* Describes the h1 tag's size */
+.big-text {
+    font-size: 4rem;
+}
+
+.ellipsize {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width:1400px) {
+    .big-text {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .big-text {
+        font-size: 2rem;
+    }
+}
+
+/* Describes the h2-h6 tags' size */
+.medium-text {
+    font-size: 2rem;
+}
+
+@media screen and (max-width:600px) {
+    .medium-text {
+        font-size: 5vw;
+    }
+}
+
+/* Describes the p and text areas size */
+.small-text {
+    font-size: 1rem;
+}
+
+.logo-text {
+    font-size: 18px;
+}
+
+@media screen and (max-width:1400px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    h1 {
+        max-width: 100%;
+        font-size: 100%;
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    h2, h3, h4, h5 {
+        width: 100%;
+        font-size: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    p {
+        max-width: 100%;
+        font-size: 100%;
+        text-align: justify;
+    }
+}
+
+/* Icons */
+
+.tiny-icon {
+    width: 24px;
+}
+
+.small-icon {
+    width: 48px;
+}
+
+.medium-icon {
+    width: 64px;
+}
+
+.big-icon {
+    width: 96px;
+    max-width: 96px;
+}
+
+/* Components
+   ========================================================================== */
+
+/*==========Navbar============*/
+
+.navbar-item {
+    float: left !important;
+}
+
+nav.big {
+    height: 72px;
+}
+
+/* Define a 'always-shown' attribute */
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+/* Define tab's reaction on a hover */ 
+nav ul a:hover{
+    background-color: white;
+}
+
+/*==========Divider============*/
+.divider.blog {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*=============Cards with the technologies===============*/
+
+/* Width of the grid with the cards */
+.techno-grid {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* Icon in the technology card */
+.card-icon {
+    height: 100px;
+    max-width: 100px;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+green-text.p {
+    text-align: justify;
+    max-width: 75%;
+    color: grey;
+    font-size: 1em;
+}
+
+@media screen and (max-width:600px) {
+    .card .card-title {
+        font-size: 14px;
+    }
+}
+
+/*=============Profile section=============*/
+
+/* Profile photo on the page */
+.profile-photo {
+    width: 50%;
+    height: 50%;
+    margin-right: 10%;
+    margin-top: 5%;
+    float: right;
+}
+
+@media screen and (max-width:600px) {
+    .profile-photo {
+        float: none;
+        margin-left: 25%;
+    }
+}
+
+/*============Projects section==============*/
+
+/* Scalable icon of the project */
+.project-icon {
+    padding: 16px;
+    max-width: 35%;
+    max-height: 25%;
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width:600px) {
+    .project-icon {
+        padding: 16px;
+        max-width: 50%;
+        max-height: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Scalable title of the project */
+.project-title {
+    max-width: 100%;
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.show-more {
+    height: 400px;
+    overflow: hidden;
+}
+
+/*============Single project==============*/
+
+.project-header-background {
+    color: white;
+    display: flex;
+    position: relative;
+}
+
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .8;
+    z-index: 0;
+}
+
+.project-header-content {
+    z-index: 1;
+    margin-top: 5%;
+}
+
+.circle-shape {
+    background-color: white;
+    width: 80%;
+    border-radius: 50%;
+}
+
+/*===========Business card=================*/
+
+.my-box {
+	position: relative;
+	width: 100%;		/* desired width */
+}
+
+.my-box:before {
+	content: "";
+	display: block;
+	padding-top: 56.25%;
+}
+
+.my-content {
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/* An icon on a business card */
+.bc-logo {
+    min-width: 48px;
+    max-width: 80%;
+    float: right;
+    position: relative;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width:1400px) {
+    .bc-logo {
+        float: right;
+        position: relative;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .bc-logo {
+        margin-top: 3ch;
+        max-width: 48px;
+    }
+}
+
+/* Informations on a business card */
+.bc-info {
+    width: 100%;
+    position: relative;
+    margin-top: 6rem;
+    font-size: 1.0em;
+    color: grey;
+}
+
+@media screen and (max-width:1400px) {
+    .bc-info {
+        width: 100%;
+        position: relative;
+        margin-top: 3rem;
+        font-size: 0.8em;
+        color: grey;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .bc-info {
+        margin-top: 4ch;
+        font-size: 0.8em;
+    }
+}
+
+.social-icon {
+    width: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*==================Blog card===================*/
+
+.blog-card {
+    border-radius: 4px 4px;
+    background-color: white;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.blog-card-title {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width:1400px) {
+    .blog-card-title {
+        font-size: 1.0em;
+    }
+}
+
+/*==================Blog section===================*/
+
+.blog-image {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+
+.blog-header {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .6;
+    position: absolute;
+}
+
+.blog-header img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.blog-header h1 {
+    margin: 50px;
+    font-size: 4rem;
+    z-index: 2;
+}
+
+.blog-header hr {
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #00FF00;
+    border: none;
+    z-index: 2;
+}
+
+.section-title {
+    color: #00FF00;
+    font-size: 24px;
+    display: inline;
+}
+
+.article-date {
+    float: right;
+    color: grey;
+    display: inline;
+}
+
+.blog-right-panel {
+    text-align: right;
+}
+
+.blog-button {
+    border: solid 2px #00FF00;
+    background-color: #FFF;
+    color: #00FF00;
+    border-radius: 7px;
+    box-shadow: none;
+}
+
+.blog-button:hover {
+    background-color: #EEE;
+    box-shadow: none;
+}
+
+.blog-email-input {
+    border: solid 2px #00FF00;
+}
+
+@media screen and (max-width:600px) {
+    .blog-post-list {
+        text-align: center;
+    }
+    
+    .blog-post-list li {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width:600px) {
+ 
+     .blog-image-me {
+         display: none;
+     }
+    
+}
+
+/*==================Ads===================*/
+
+.column-ad {
+    margin-top: 250px;
+}
+
+@media screen and (max-width:1400px) {
+    .column-ad {
+        margin-top: 50px;
+    }
+}
+
+/*==================Footer===================*/
+
+.page-footer {
+    background-color: white;
+}
+
+/* Type-writer animation
+   ========================================================================== */
+
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  margin-bottom: 3ch;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+/* Responive images grid
+   ========================================================================== */
+
+@supports (display: grid) {
+  body,
+  html {
+    display: block;
+  }
+}
+
+.message {
+  border: 1px solid #d2d0d0;
+  padding: 2em;
+  font-size: 1.7vw;
+  -webkit-box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+          box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+}
+@supports (display: grid) {
+  .message {
+    display: none;
+  }
+}
+
+.section {
+  display: none;
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 4rem;
+  }
+}
+
+@supports (display: grid) {
+  .section {
+    display: block;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: row dense;
+}
+
+.item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #0c9a9a;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background: url("images/projects/app-guide-image.webp");
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+          box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  cursor: pointer;
+  counter-increment: item-counter;
+}
+
+.item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.item:hover:after {
+  opacity: 0;
+}
+.item--medium {
+  grid-row-end: span 2;
+}
+.item--large {
+  grid-row-end: span 3;
+}
+.item--full {
+  grid-column-end: auto;
+}
+@media screen and (min-width: 768px) {
+  .item--full {
+    grid-column: 1/-1;
+    grid-row-end: span 2;
+  }
+}
+.item__details {
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  color: #444;
+  background: #fff;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color: #828282;
+}
+.item__details:before {
+  content: counter(item-counter);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-right: 0.5em;
+  color: #444;
+}
