@@ -102,8 +102,16 @@ textarea.materialize-textarea:focus:not([readonly]) {
    ========================================================================== */
 
 /* Attributes */
+p.center {
+    text-align: center;
+}
+
 .right {
     float: right;
+}
+
+.full-width {
+    width: 100%;
 }
 
 .full-width-image {
@@ -194,29 +202,23 @@ nav ul a:hover {
     background-color: white;
 }
 
+.dashed-border {
+    padding: 16px;
+    border-width: 1px;
+    border: dashed;
+    border-color: #00FF00;
+}
+
+#image-view {
+    background-color: darkgrey;
+    width: 480px;
+    height: 320px;
+}
+
 /*==========Divider============*/
 .divider.blog {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-
-/*==================Blog card===================*/
-
-.blog-card {
-    border-radius: 4px 4px;
-    background-color: white;
-    box-shadow: 2px 2px 2px grey;
-}
-
-.blog-card-title {
-    font-size: 1.5em;
-}
-
-@media screen and (max-width: 1400px) {
-    .blog-card-title {
-        font-size: 1.0em;
-    }
 }
 
 /*==================Blog section===================*/

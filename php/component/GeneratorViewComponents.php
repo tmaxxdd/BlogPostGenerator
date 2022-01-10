@@ -12,7 +12,7 @@ class GeneratorViewComponents
     {
         return
             '<h5>Section</h5>'
-            . '*Input a section name for the article'
+            . '<p class="grey-text">The section for which this article should be classified</p>'
             . '<div class="input-field">'
             . '<textarea id="section" class="materialize-textarea" data-length="20"></textarea>'
             . '<label for="section">Input e.g. Kotlin, Android</label>'
@@ -21,9 +21,12 @@ class GeneratorViewComponents
 
     function getTimeView()
     {
-        return '<h5>Time</h5>'
+        return '<h5>Date</h5>'
+            . '<p class="grey-text">The date of publication this article</p>'
             . '<input id="picker_date" type="text" class="datepicker">'
             . '<label for="picker_date" class="">Input a date</label>'
+            . '<h5>Time</h5>'
+            . '<p class="grey-text">The time of publication this article</p>'
             . '<input id="picker_time" type="text" class="timepicker">'
             . '<label for="picker_time" class="">Input a time</label>';
     }
@@ -33,17 +36,21 @@ class GeneratorViewComponents
         return
             '<h5>Photo</h5>'
             . '<form id="upload-image" action="/upload_image.php" method="post" enctype="multipart/form-data">'
-            . 'Select image to upload:'
-            . '<br>'
+            . '<p class="grey-text">Select an image to upload</p>'
+            . '<div class="file-field input-field">'
+            . '<div class="btn green">'
+            . '<span>File</span>'
             . '<input type="file" name="fileToUpload" id="fileToUpload">'
-            . '<br>'
-            . 'Image name:'
-            . '<br>'
-            . '<div class="input-field">'
+            . '</div>'
+            . '<div class="file-path-wrapper">'
+            . '<input class="file-path validate" type="text" name="fileToUpload" id="fileToUpload">'
+            . '</div>'
+            . '</div>'
+            . '<p class="grey-text">Image name</p>'
+            . '<div class="input-field label">'
             . '<input id="image-name-input" type="text" name="image_name">'
             . '</div>'
-            . '<br>'
-            . '<input type="submit" value="Upload Image" name="submit">'
+            . '<input class="btn green" type="submit" value="Upload Image" name="submit">'
             . '<br>'
             . '<div id="form-messages"></div>'
             . '<br>'
@@ -54,7 +61,7 @@ class GeneratorViewComponents
     {
         return
             '<h5>Title</h5>'
-            . '* Title will be a H1 header and metadata title'
+            . '<p class="grey-text">Title will be a H1 header and metadata title</p>'
             . '<div class="input-field">'
             . '<textarea id="title" class="materialize-textarea" data-length="60"></textarea>'
             . '<label for="title">Input a title. Remember about series!</label>'
@@ -66,7 +73,7 @@ class GeneratorViewComponents
     {
         return
             '<h5>Description</h5>'
-            . '* Description will be an introduction in the article and description in a metadata'
+            . '<p class="grey-text">Description will be an introduction in the article and description in a metadata</p>'
             . '<br>'
             . '<div class="input-field">'
             . '<textarea id="description" class="materialize-textarea" data-length="160"></textarea>'
@@ -102,17 +109,16 @@ class GeneratorViewComponents
     {
         return
             '<br>'
-            . '<div style="text-align: center;">'
-            . '<button data-target="component-modal" class="btn modal-trigger" href="#component-modal">Add a component</button>'
-            . '</div>'
-            . '<br>';
+            . '<div style="text-align: left;">'
+            . '<button data-target="component-modal" class="btn modal-trigger green" href="#component-modal">Add a component</button>'
+            . '</div>';
     }
 
     function getDeleteComponentsSection()
     {
         return
             '<br>'
-            . '<div style="text-align: right;">'
+            . '<div style="text-align: left;">'
             . '<button id="delete-all-component" class="btn red white-text">Delete all components</button>'
             . '</div>';
     }
@@ -123,14 +129,13 @@ class GeneratorViewComponents
             '<br>'
             . '<div style="text-align: left;">'
             . '<button onclick="dropData();" class="btn green">Drop snapshot</button>'
-            . '</div>'
-            . '<br>';
+            . '</div>';
     }
 
     function getPublishButtonView()
     {
         return '<br>'
-            . '<div style="text-align: center;">'
+            . '<div style="text-align: left;">'
             . '<button onclick="publish();" class="btn green">Publish</button>'
             . '</div>'
             . '<br>';
